@@ -1,9 +1,9 @@
-# Xamarin Dynamics iOS Fonts
-Custom fonts are commonly used function in apps.  And the Xamarin live player (https://www.xamarin.com/live) is a great way to quickly debug apps on your device.  However, a limitation of the Live Player is it cannot load resources using the info.plist file which is the most widely document method for loading custom fonts.  To get around this limitation, or to just dynamically load fonts as you need them, fonts on iOS can be loaded dynamically via code.  This project is a sample project to show the code necessary to accomplish this.  
+# Xamarin Dynamic iOS Fonts
+*A Visual Studio 2017 project that uses the Xamarian DependencyService to dynamically load a bundle file as a font.*
 
-This is a Visual Studio 2017 project that uses the Xamarian DependencyService as an interface to a custom iOS function that loads a bundle file as a font.  The changes from a base Xamarin project are outlined below.
+Custom fonts are commonly used function in apps.  And the Xamarin live player (https://www.xamarin.com/live) is a great way to quickly debug apps on your device.  However, a limitation of the Live Player is it cannot load resources using the info.plist file which is the most widely documented method for loading custom fonts.  To get around this limitation, or to just load fonts as needed, fonts on iOS can be loaded dynamically via code.  This project is a sample to show the minimum code neded to accomplish dynamic font loading.  
 
-# Steps!
+# Necessary Steps!
 1) Add the fonts to the Resources folder as a `BundleResource` and `Copy Always`.
 2) Add an interface that defines the contract for the DependencyService.
 ```cs
