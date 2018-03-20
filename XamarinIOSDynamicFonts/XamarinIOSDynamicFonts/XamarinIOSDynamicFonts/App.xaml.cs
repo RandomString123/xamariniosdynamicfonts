@@ -12,8 +12,8 @@ namespace XamarinIOSDynamicFonts
 		public App ()
 		{
 			InitializeComponent();
-            DependencyService.Get<IFontLoader>().LoadFile("FontAwesome.ttf");
-            DependencyService.Get<IFontLoader>().LoadFile("Mina-Regular.ttf");
+            DependencyService.Get<IFontLoader>()?.LoadFile("FontAwesome.ttf");
+            DependencyService.Get<IFontLoader>()?.LoadFile("Mina-Regular.ttf");
 
             MainPage = new XamarinIOSDynamicFonts.MainPage();
 		}
