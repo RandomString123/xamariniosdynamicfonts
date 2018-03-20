@@ -22,6 +22,7 @@ namespace XamarinIOSDynamicFonts.iOS
                 return;
             }
             //ProTip: Examine font in a dubugger to see details of the font file.
+            //Expand font->non-public->PostScriptName to get the FontFamily
             CoreGraphics.CGFont font = CoreGraphics.CGFont.CreateFromProvider(provider);
             if(!CoreText.CTFontManager.RegisterGraphicsFont(font, out t))
             {
