@@ -12,8 +12,10 @@ namespace XamarinIOSDynamicFonts
 		public App ()
 		{
 			InitializeComponent();
+            DependencyService.Get<IFontLoader>().LoadFile("FontAwesome.ttf");
+            DependencyService.Get<IFontLoader>().LoadFile("Mina-Regular.ttf");
 
-			MainPage = new XamarinIOSDynamicFonts.MainPage();
+            MainPage = new XamarinIOSDynamicFonts.MainPage();
 		}
 
 		protected override void OnStart ()
