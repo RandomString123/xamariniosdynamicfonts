@@ -45,3 +45,12 @@ namespace XamarinIOSDynamicFonts.iOS
 ```cs
 DependencyService.Get<IFontLoader>().LoadFile("FontAwesome.ttf");
 ```
+
+# Running this Project
+1) Clone the repo
+2) Launch Visual Studio 2017 and open `XamarinIOSDynamicFonts.sln`
+3) Link your Live Player to Visual Studio
+4) Run the Application
+
+### Phone Success Image
+![screenshot](20180320_013214883_iOS.png)
