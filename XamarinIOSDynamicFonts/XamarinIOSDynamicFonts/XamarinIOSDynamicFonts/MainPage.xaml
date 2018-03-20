@@ -2,10 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:XamarinIOSDynamicFonts"
-             x:Class="XamarinIOSDynamicFonts.MainPage">
-    <StackLayout Orientation="Horizontal">
-        <Label Text="Welcome to Xamarin.Forms!" />
-        <Label Text="Welcome to Xamarin.Forms!" />
-        <Label Text="Welcome to Xamarin.Forms!" />
+             x:Class="XamarinIOSDynamicFonts.MainPage" Padding="2,30">
+    <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="&#xF10D;" FontSize="Large"   FontFamily="FontAwesome5FreeSolid" />
+            <Label Text="iOS Dynamic Fonts!" FontSize="Large" FontFamily="Mina-Regular"/>
+            <Label Text="&#xF10E;" FontSize="Large" FontFamily="FontAwesome5FreeSolid"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <Label Text="&#xF028;" FontSize="Large" FontFamily="FontAwesome5FreeSolid"/>
+            <Label Text="Everybody get down!" FontSize="Large" FontFamily="Mina-Regular"/>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
