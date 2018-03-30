@@ -43,7 +43,7 @@ namespace XamarinIOSDynamicFonts.iOS
 ```
 4) Add code to the App.xml.cs file to load the files(s) via the dependency service
 ```cs
-DependencyService.Get<IFontLoader>().LoadFile("FontAwesome.ttf");
+DependencyService.Get<IFontLoader>()?.LoadFile("FontAwesome.ttf");
 ```
 
 # Running this Project
